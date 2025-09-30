@@ -11,7 +11,7 @@ async function getWeather() {
     console.log("Searching weather for:", location);
 
     const response = await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(location)}&units=metric&appid=60b164b4f939568293707a96d9842e53`
+      `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(location)}&units=metric&appid=Enter_your_API`
     );
     const data = await response.json();
 
@@ -33,3 +33,4 @@ async function getWeather() {
     console.error(error);
   }
 }
+
